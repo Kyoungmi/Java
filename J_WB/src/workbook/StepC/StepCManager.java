@@ -15,6 +15,7 @@ public class StepCManager {
 			printf("5. 날짜계산\n");
 			printf("6. 점수계산\n");
 			printf("7. 파일 용량 계산\n");
+			printf("8. 최대 최소 구하기\n");
 			printf("=>원하는 메뉴는?(0:exit) :");
 			menu = s.nextInt();
 			if(menu == 0) break;
@@ -47,7 +48,22 @@ public class StepCManager {
 				c_Bytes bt = new c_Bytes();
 				bt.printbytes();
 				break;
-			
+			case 8:
+				c_greatest gt = new c_greatest();
+				gt.printgreatest();
+				break;
+			case 9:
+				c_tax ta = new c_tax();
+				ta.printtax();
+				break;
+			case 10:
+				c_operator op = new c_operator();
+				op.printresult();
+				break;
+			case 11:
+				c_yoon_year yy = new c_yoon_year();
+				yy.printyoon();
+				break;
 			}
 		}
 		
