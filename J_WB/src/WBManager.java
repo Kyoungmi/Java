@@ -3,6 +3,7 @@ import java.util.Scanner;
 import workbook.StepA.StepAManager;
 import workbook.StepB.StepBManager;
 import workbook.StepC.StepCManager;
+import workbook.StepD.StepDManager;
 
 public class WBManager {
 
@@ -17,6 +18,8 @@ public class WBManager {
 			new StepBManager();
 		else if(step.equalsIgnoreCase("C"))
 			new StepCManager();
+		else if(step.equalsIgnoreCase("D"))
+			new StepDManager();
 		System.out.printf("종료되었습니다.\n");
 	}	
 }
