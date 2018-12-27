@@ -15,7 +15,11 @@ public class d_greatest {
 		this.max_num = number;
 		System.out.print("0부터 100 사이의 숫자를 입력하세요 ");
 		this.number=s.nextInt();
-		this.min_num = number;
+		if(this.number > this.max_num) {
+			this.min_num = this.max_num;
+			this.max_num = this.number;
+		}
+		else this.number = min_num;
 		while(true) {
 			System.out.print("0부터 100 사이의 숫자를 입력하세요 ");
 			this.number=s.nextInt();
