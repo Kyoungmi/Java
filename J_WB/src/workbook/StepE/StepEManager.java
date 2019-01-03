@@ -33,9 +33,11 @@ public class StepEManager {
 				break;
 			case 4:
 				e_googoo dan = new e_googoo();
+				dan.printdan();
 				break;
 			case 5:
 				e_googoo2 dan2 = new e_googoo2();
+				dan2.printdan();
 				break;
 			case 6:
 			    e_2nd nd = new e_2nd();
