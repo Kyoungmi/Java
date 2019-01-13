@@ -8,6 +8,7 @@ import workbook.StepE.StepEManager;
 import workbook.StepF.StepFManager;
 import workbook.StepG.StepGManager;
 import workbook.StepH.StepHManager;
+import workbook.StepI.StepIManager;
 
 public class WBManager {
 
@@ -32,6 +33,8 @@ public class WBManager {
 			new StepGManager();
 		else if(step.equalsIgnoreCase("H"))
 			new StepHManager();
+		else if(step.equalsIgnoreCase("I"))
+			new StepIManager();
 		System.out.printf("종료되었습니다.\n");
 	}	
 }
