@@ -22,11 +22,9 @@ public class g_amusement {
 		this.team_count = s.nextInt();
 		for(int i =0; i<team_count; i++){
 			System.out.printf("%d번팀 인원수(초등학생, 청소년, 일반, 경로대상)를 입력하세요. ", i+1);
-			count[0] = s.nextInt(); v_count[0] += count[0]; total_count += count[0];
-			count[1] = s.nextInt(); v_count[1] += count[1]; total_count += count[1];
-			count[2] = s.nextInt(); v_count[2] += count[2]; total_count += count[2];
-			count[3] = s.nextInt(); v_count[3] += count[3]; total_count += count[3];
-			
+			for(int j =0; j<4; j++) {
+			count[j] = s.nextInt(); v_count[j] += count[j]; total_count += count[j];
+			}
 			System.out.printf("%d번팀 할인카드 종류(카드없음:0, 일반등급 : 1, VIP 등급 : 2)를 입력하세요. ", i+1);
 			this.membership = s.nextInt();
 			
